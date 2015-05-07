@@ -1,10 +1,9 @@
-# budo-gulp-starter
+# budo-gulp-react-starter
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-A "starter kit" with [budō](https://github.com/mattdesl/budo), SASS, and Gulp. The aim is rapid iteration and a tight feedback loop. Could be augmented with VueJS, React, or any frameworks that work in browserify.
-
-[[demo]](http://mattdesl.github.io/budo-gulp-starter/app/)
+A "starter kit" with [budō](https://github.com/mattdesl/budo), SASS, React and Gulp.
+It is based on [budo-gulp-starter](https://github.com/mattdesl/budo-gulp-starter).
 
 Some highlights:
 
@@ -14,6 +13,7 @@ Some highlights:
   - LiveReload browser refresh on `bundle.js` update
   - LiveReload CSS injection on *.scss changes
   - Babel for ES6 transpiling
+  - React components
   - Syntax errors shown in the browser during development
 
 Note that budō is not tied to Gulp, and in some cases it may be easier to use it's command-line version. 
@@ -22,7 +22,7 @@ Note that budō is not tied to Gulp, and in some cases it may be easier to use i
 
 ```sh
 git clone https://github.com/mattdesl/budo-gulp-starter.git
-cd budo-gulp-starter
+cd budo-gulp-react-starter
 
 # install dependencies
 npm install
@@ -31,7 +31,9 @@ npm install
 npm run open
 ```
 
-This should run the watch server and open `localhost:9966` in your default browser. Changes to `src/index.js` will trigger a incremental bundle and page reload. Changes to `src/sass/main.scss` will cause CSS injection without losing application state. 
+This should run the watch server and open `localhost:9966` in your default browser. Changes to `src/js/index.js` will trigger a incremental bundle and page reload. 
+
+Changes to files in `src/sass/` will cause CSS injection without losing application state. 
 
 Syntax errors are overlayed in the browser with a custom style:
 
@@ -45,7 +47,3 @@ npm run
   open   - start dev server and open the browser to localhost
   build  - the compressed production build
 ```
-
-## License
-
-MIT, see [LICENSE.md](http://github.com/mattdesl/budo-gulp-starter/blob/master/LICENSE.md) for details.
