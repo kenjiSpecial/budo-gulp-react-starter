@@ -39,7 +39,7 @@ gulp.task('sass', function () {
 //the development task
 gulp.task('watch', ['sass'], function (cb) {
     //watch SASS
-    gulp.watch('src/sass/*.scss', ['sass']);
+    gulp.watch(['src/sass/*.scss', 'src/sass/**/*.scss'] , ['sass']);
 
     var ready = function () {
     };
